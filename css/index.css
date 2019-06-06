@@ -320,7 +320,7 @@ img {
   padding-left: 0;
 }
 .home .content-destination {
-  padding: 0 0 3% 10%;
+  padding: 3% 0 3% 10%;
   border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
