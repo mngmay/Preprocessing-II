@@ -1,1 +1,26 @@
 // Mixins in here
+
+.displayFlex(@justify: space-between, @align: center, @direction: row){
+	display: flex;
+	justify-content: @justify;
+	align-items: @align;
+	flex-direction: @direction;
+}
+
+.testborder {
+    border: 1px solid blue;
+}
+
+.standardborder {
+    border-bottom: 2px dashed @silver;
+}
+
+.standardbtn (@height: 20%, @color: @eastern-blue, @fontcolor: @white){
+    width: 82%;
+    height: @height;
+    background-color: @color;
+    color: @fontcolor;
+    font-size: 1.7rem;
+    border-radius: 20px;
+    .displayFlex(center);
+}

@@ -1,1 +1,41 @@
 // Navigation Styles here
+
+.topnav {
+    .displayFlex();
+    height: 4rem;
+    font-size: 2rem;
+    .standardborder();
+    padding: 5% 10%;
+
+    @media @mobile{
+        .displayFlex(center, center, column);
+        width: 110%;
+        padding: 2% 10%;
+        height: 100%;
+        margin-left: -5%;
+    }
+
+    nav {
+        .displayFlex();
+        width: 37%;
+        position: relative;
+        right: 20px;
+        a {
+            font-size: 1.7rem;
+            color: @shark;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media @mobile {
+            padding-top: 2%;
+            width: 100%;
+            right: 0;
+        }
+
+    }
+
+}
